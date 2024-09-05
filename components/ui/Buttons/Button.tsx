@@ -1,11 +1,30 @@
-import React, { Children, ReactNode } from "react";
+import React, { ReactNode } from "react";
 
 type props = {
   children: ReactNode;
+  onClick:
+    | (() => void)
+    | (() => Promise<void>)
+    | ((prevState: any) => React.SetStateAction<any>);
+  padding: "py-4 px-5" | "p-2";
+  color?: "bg-primary" | "bg-danger";
+  outline?: boolean;
 };
-const Button = ({ children }: props) => {
+const Button = ({
+  children,
+  onClick,
+  padding,
+  color = "bg-primary",
+  outline = false,
+}: props) => {
+  const colorResolverClass = `${
+    !outline
+      ? `flex w-full ${padding} ${color} rounded-2xl justify-center items-center`
+      : `flex w-full ${padding} bg-white border-2 border-primary rounded-2xl justify-center items-center`
+  }`;
+
   return (
-    <button className="px-4 py-1 rounded-sm bg-red-500 text-white">
+    <button onClick={onClick} className={`${colorResolverClass}`}>
       {children}
     </button>
   );
