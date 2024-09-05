@@ -7,6 +7,13 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    colors:{
+      primarycolor: "#77C5A6",
+      secondarycolor: "#84DBB8",
+      'black-300': '#4D4D4D',
+      'custom-gray': '#F5F5F5',
+      'custom-gray-border': '#D2D2D2',
+    },
     screens: {
       sm: "340px",
       md: "768px",
@@ -14,6 +21,10 @@ const config: Config = {
       xl: "1280px",
     },
     extend: {
+      borderRadius: {
+        'custom': '16px',
+        
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
