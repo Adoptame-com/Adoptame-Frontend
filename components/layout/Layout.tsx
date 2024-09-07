@@ -1,16 +1,16 @@
-"use client";
-import React from "react";
-import { NextUIProvider } from "@nextui-org/react";
+'use client'
+import { NextUIProvider } from '@nextui-org/react'
+import type React from 'react'
 
 export type ProvidersProps = {
-  children: React.ReactNode;
-};
+	children: React.ReactNode
+}
 const Layout = ({ children }: ProvidersProps) => {
-  return (
-    <NextUIProvider>
-      <div>{children}</div>
-    </NextUIProvider>
-  );
-};
+	return (
+		<NextUIProvider>
+			<div>{children}</div>
+		</NextUIProvider>
+	)
+}
 
-export default Layout;
+export default Layout
