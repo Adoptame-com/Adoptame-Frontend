@@ -2,14 +2,9 @@
 import { Avatar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenu, NavbarMenuItem, NavbarMenuToggle, Navbar as NextuiNavbar } from '@nextui-org/react'
 import Link from 'next/link'
 import { useState } from 'react';
+import { menuItems } from '@/components/layout/header/MenuItems';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const menuItems = [
-    { name: 'Inicio', path: '/' },
-    { name: 'Adoptar', path: '#' },
-    { name: 'Sobre Nosotros', path: '#' },
-    { name: 'Contacto', path: '#' },
-  ]
   return (
     <NextuiNavbar
       maxWidth='full'
