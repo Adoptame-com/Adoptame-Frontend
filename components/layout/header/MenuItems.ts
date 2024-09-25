@@ -1,6 +1,6 @@
 export const menuItems = [
 	{ name: 'Inicio', path: '/' },
-	{ name: 'Adoptar', path: '#' },
-	{ name: 'Sobre Nosotros', path: '#' },
-	{ name: 'Contacto', path: '#' },
+	{ name: 'Mascotas', path: '/mascotas' },
+	{ name: 'Sobre Nosotros', path: '/sobre-nosotros' },
+	{ name: 'Contacto', path: '/contacto' },
 ]
