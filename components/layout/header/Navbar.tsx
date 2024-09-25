@@ -1,5 +1,6 @@
 'use client'
 import { menuItems } from '@/components/layout/header/MenuItems'
+import ThemeToggle from '@/components/shared/ThemeToogle'
 import {
 	Avatar,
 	NavbarBrand,
@@ -17,7 +18,7 @@ const Navbar = () => {
 	return (
 		<NextuiNavbar
 			maxWidth="full"
-			className="bg-[#84DBB8]"
+			className="bg-primary"
 			isMenuOpen={isMenuOpen}
 			onMenuOpenChange={setIsMenuOpen}
 		>
@@ -36,6 +37,7 @@ const Navbar = () => {
 			</NavbarContent>
 
 			<NavbarContent as="div" justify="end">
+				<ThemeToggle />
 				{/* Avatar example */}
 				<Avatar
 					isBordered
