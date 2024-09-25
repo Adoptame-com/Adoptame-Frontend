@@ -8,7 +8,8 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
 	title: 'Adoptame | Home Page',
-	description: 'Adoptame is a simple app that connects people with animals in need of adoption, helping you find and adopt your perfect pet.',
+	description:
+		'Adoptame is a simple app that connects people with animals in need of adoption, helping you find and adopt your perfect pet.',
 }
 
 export default function RootLayout({

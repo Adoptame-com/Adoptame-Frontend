@@ -1,4 +1,4 @@
-import { nextui } from "@nextui-org/theme";
+import { nextui } from "@nextui-org/react";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -15,23 +15,18 @@ const config: Config = {
       lg: "1024px",
       xl: "1280px",
     },
-    extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
-    },
+    extend: {},
   },
+  darkMode: "class",
   plugins: [nextui({
     themes: {
       light: {
         colors: {
           primary: {
-            DEFAULT: "#84DBB8",
+            DEFAULT: "#3AAA8B",
             foreground: "#FFFFFF",
           }
-        }
+        },
       },
       dark: {
         colors: {
